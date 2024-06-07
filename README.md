@@ -19,9 +19,9 @@
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 1</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Tutor</a>
 ### Coordenador
-- <a href="https://www.linkedin.com/company/inova-fusca">Nome do integrante 2</a>
+- <a href="https://www.linkedin.com/company/inova-fusca">Nome do Coordenador</a>
 
 
 ## 📜 Descrição
