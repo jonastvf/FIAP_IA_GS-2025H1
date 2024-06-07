@@ -17,7 +17,7 @@
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 4</a> 
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 5</a>
 
-## 👩‍🏫 Professor:
+## 👩‍🏫 Professores:
 ### Tutor(a) 
 - <a href="https://www.linkedin.com/in/victorbarq/">Nome do integrante 1</a>
 ### Coordenador
