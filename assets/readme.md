@@ -3,3 +3,5 @@ Coloque nessa pasta assets, todas as figuras que vÃ£o aparecer na sua documentaÃ
 Use os comandos abaixo para citar as imagens no seu doc.
 
 
+<img src="https://github.com/agodoi/template/assets/fiap.png" width="600">
+
