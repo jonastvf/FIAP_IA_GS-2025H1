@@ -104,10 +104,6 @@
 
 *Inclua prints, diagramas, fluxogramas ou protótipos da solução final.*
 
-## 5.3. Critérios de Escolha do Grupo Campeão
-
-*Liste os pontos que serão levados em consideração na escolha do grupo vencedor (inovação, execução, aderência ao problema, etc.).*
-
 <br>
 
 # <a name="c6"></a>6. Referências
