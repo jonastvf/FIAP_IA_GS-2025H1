@@ -70,7 +70,7 @@
 
 ## 3.3. Análises Iniciais (Data Science)
 
-*Utilizando R, apresente explorações iniciais, como estatísticas descritivas, correlações, análises gráficas preliminares.*
+*Utilizando R ou linguagem, apresente explorações iniciais, como estatísticas descritivas, correlações, análises gráficas preliminares.*
 
 ## 3.4. Modelagem de Banco de Dados
 
