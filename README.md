@@ -26,7 +26,37 @@
 
 ## 📜 Descrição
 
-*Descreva seu projeto com base no texto do PBL (até 600 palavras)*
+**Sistema de gestão e monitoramento de deslizamentos (SMD)**
+
+1. O que:
+
+Criar um Eco-sistema gerenciador de áreas de risco de deslizamento de terras, capaz de monitorar em escala local áreas com risco de deslizamento em suas dimensões geologicas, climáticas e humana. 
+
+2. Porque:
+
+Atualmente, entidades que realizam o manejo de áreas de risco de deslizamento como a Defesa Civil, tem dificuldade de realizar o manejo e gestão das áreas de risco em suas diferentes dimensões. Dado que os sistemas de monitoramento atuais oferecem apenas imagens via satélite, agregadas no nível do município ou regionalidade. 
+
+O sistema terá por príncipio oferecer a gestão do risco em menor escala, integrando tecnologias e diferentes camadas de dados que permitam a tomada de decisão ágil e manejo adequado do impacto.
+
+3. Onde, quando e para quem?
+
+O sistema será desenvolvido pensando em áreas de risco já conhecidas pela Defesa Civil, especialmente em contextos urbanos ou de maior densidade populacional. O objetivo é permitir o manejo adequado dos diferentes impactos quando um sinistro ocorre nesta área. 
+
+Ele deverá ser capaz de descrever e medir condições de risco como: tipo do solo, curvas de nível do terreno, microclima, precipitação local, densidade de ocupação, domicilios (por raio de deslizamento), números de familias da região, condições de ocupação do espaço, tipo de residencias, residentes portadores de necessidades especiais, vibração do terreno, movimentações de solo, vento, umidade do solo e outras condições. 
+
+O sistema deverá ser capaz de armazenar estas informações, gerar predições, alertas e calculos de impacto para simulação de ações coordenadas. 
+
+Por se tratar de zonas de risco conhecidas, prevemos o engajamento da comunidade habitante do local por meio de um aplicativo que poderá compartilhar a predição de risco para população, oferecer informações e permitir que a comunidade envie fotos e alertas a defesa civil. O aplicativo também terá por objetivo estreitar a comunicação entre cidadãos e defesa civil. 
+
+4. Como?
+
+O sistema será composto por:
+
+- Banco de dados ("datalake"): armazenará todas as informações relevantes das áreas de risco e também do app
+- Sensores IOT: implantados localmente, enviam informações via internet e rádio
+- Sistema de Alerta: compõe uma rede de alertas, com app, mensagens, avisos sonoros locais entre outros
+- Algoritimos de IA: a partir dos dados são capazes de prever condições em que o sinistro pode ocorrer, poderá ser treinado a priori (por meio de estudos técninos e simulações) e a posteri (por dados de outros sinistros).
+- Ingestor de dados: recebe informações de outras fontes para melhorar as predições, exemplos: sistemas meterologicos, mapas e satélites. 
 
 
 ## 📁 Estrutura de pastas
