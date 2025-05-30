@@ -59,6 +59,10 @@ O sistema será composto por:
 - Algoritimos de IA: a partir dos dados são capazes de prever condições em que o sinistro pode ocorrer, poderá ser treinado a priori (por meio de estudos técninos e simulações) e a posteri (por dados de outros sinistros).
 - Ingestor de dados: recebe informações de outras fontes para melhorar as predições, exemplos: sistemas meterologicos, mapas e satélites. 
 
+## 💽 Fontes de dados: 
+
+- [Data GEO](https://datageo.ambiente.sp.gov.br/temas): Sistema ambiental do governo estadual de São Paulo
+   - [Areas de risco de deslizamentos - Mapas](https://datageo.ambiente.sp.gov.br/coffey?_48_INSTANCE_KDzpt1cNV1RS_iframe_text=deslizamentos&enviar=Consultar&p_p_id=48_INSTANCE_KDzpt1cNV1RS&_48_INSTANCE_KDzpt1cNV1RS_iframe_avancado=false#_48_INSTANCE_KDzpt1cNV1RS_%3Dhttps%253A%252F%252Fdatageo.ambiente.sp.gov.br%252Fgeoportal%252Fcatalog%252Fsearch%252Fsearch.page%253Ftext%253Ddeslizamentos%2526avancado%253Dfalse)
 
 ## 📁 Estrutura de pastas
 
