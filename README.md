@@ -63,6 +63,7 @@ O sistema será composto por:
 
 - [Data GEO](https://datageo.ambiente.sp.gov.br/temas): Sistema ambiental do governo estadual de São Paulo
    - [Areas de risco de deslizamentos - Mapas](https://datageo.ambiente.sp.gov.br/coffey?_48_INSTANCE_KDzpt1cNV1RS_iframe_text=deslizamentos&enviar=Consultar&p_p_id=48_INSTANCE_KDzpt1cNV1RS&_48_INSTANCE_KDzpt1cNV1RS_iframe_avancado=false#_48_INSTANCE_KDzpt1cNV1RS_%3Dhttps%253A%252F%252Fdatageo.ambiente.sp.gov.br%252Fgeoportal%252Fcatalog%252Fsearch%252Fsearch.page%253Ftext%253Ddeslizamentos%2526avancado%253Dfalse)
+   - [Banco de dados sintéticos gerado pela inteligência artificial Manus:](https://manus.im/share/ipbIW97xOv31p6r8YH0Ohb?replay=1 ) utilizando os dados de mapas a acima, pedimos para a IA Manus criar dados fictícios combinando o MER criado pelo grupo e os dados públicos da áreas de risco de deslizamento do Governo Estadual de São Paulo. O resultado foi uma base de dados em csv, contendo 8 municípios do estado e diferentes zonas de risco monitoradas, onde foram simulados dados dos sensores utilizados no projeto. A chamamos de fontes de dados sintética, pois ela é uam combinação entre dados reais (mapa publicos de áreas de risco) e ficticios (dados simulados de sensores). O banco de dados foi utilizado para treinar o nosso modelo de IA para alertas.
 
 ## 📁 Estrutura de pastas
 
