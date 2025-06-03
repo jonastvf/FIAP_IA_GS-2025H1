@@ -8,12 +8,12 @@
 
 # Nome do projeto
 
-## Nome do grupo
+## Grupo de SP e Interior
 
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/in/jonastadeufernandes">Jonas T V Fernandes</a>
 - <a href="https://www.linkedin.com/in/rannaleslie">Ranna Leslie</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Raphael da Silva</a> 
+- <a href="https://www.linkedin.com/in/raphaelsilva-phael">Raphael da Silva</a> 
 - <a href="https://www.linkedin.com/in/raphael-dinelli-8a01b278/">Raphael Dinelli Neto</a> 
 - <a href="https://www.linkedin.com/company/inova-fusca">Levi Passos Silveira Marques</a>
 
@@ -64,6 +64,9 @@ O sistema será composto por:
 - [Data GEO](https://datageo.ambiente.sp.gov.br/temas): Sistema ambiental do governo estadual de São Paulo
    - [Areas de risco de deslizamentos - Mapas](https://datageo.ambiente.sp.gov.br/coffey?_48_INSTANCE_KDzpt1cNV1RS_iframe_text=deslizamentos&enviar=Consultar&p_p_id=48_INSTANCE_KDzpt1cNV1RS&_48_INSTANCE_KDzpt1cNV1RS_iframe_avancado=false#_48_INSTANCE_KDzpt1cNV1RS_%3Dhttps%253A%252F%252Fdatageo.ambiente.sp.gov.br%252Fgeoportal%252Fcatalog%252Fsearch%252Fsearch.page%253Ftext%253Ddeslizamentos%2526avancado%253Dfalse)
 
+- [Google Sheets](https://docs.google.com/spreadsheets/): Ferramenta online de planilhas
+   - [Planilha de Monitoramento do Global Solution - Google Sheets](https://docs.google.com/spreadsheets/d/1H1zP9-9wuWSaKQ42PPWfBeWI3orkBrMcKRiPaCnG0vY/edit?usp=sharing)
+
 ## 📁 Estrutura de pastas
 
 Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
@@ -78,12 +81,55 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 ## 🔧 Como executar o código
 
-*Acrescentar as informações necessárias sobre pré-requisitos (IDEs, serviços, bibliotecas etc.) e instalação básica do projeto, descrevendo eventuais versões utilizadas. Colocar um passo a passo de como o leitor pode baixar o seu código e executá-lo a partir de sua máquina ou seu repositório. Considere a explicação organizada em fase.*
+### 📈 Monitoramento IoT com ESP32 e Google Sheets
 
+O projeto foi desenvolvido na <a href="https://wokwi.com">Wokwi</a> junto com extensão para Visual Studio Code, utilizando as extensões <a href="https://platformio.org">PlatformIO</a>, para executar o circuito e compilar o código dentro do VS Code.
+
+#### 🔧 Etapa para executar o projeto
+
+**1. Instalar as extensões no VS Code necessárias para execução** 
+- [C/C++ (ms-vscode.cpptools)](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
+- [PlatformIO IDE (platformio.platformio-ide)](https://marketplace.visualstudio.com/items?itemName=platformio.platformio-ide)
+- [Wokwi for VS Code (wokwi.wokwi-vscode)](https://marketplace.visualstudio.com/items?itemName=wokwi.wokwi-vscode)
+
+
+```bash
+code --install-extension ms-vscode.cpptools
+code --install-extension platformio.platformio-ide
+code --install-extension wokwi.wokwi-vscode
+```
+
+
+**2. O arquivo está presente na seguinte caminho:**
+
+```sheel
+FIAP_IA_GS-2025H1/src/ESP32
+```
+
+Dentro da pasta `src` está o arquivo `main.cpp`, onde se encontra o código principal do projeto.<br>
+Em `diagram.json` está o circuito eletrônico do projeto.
+
+Devido a plataforma **Wokwi** ser limitadas em sesnores especifícos, utilizamos:
+- Potênciomentros simulando um sensor de vibração, onde ele detecta as vibrações no eixo X, Y e Z.
+- Módulo LDR simula sensor de vento, quanto menor a luminosidade, maior o vento capturado no sensor.
+- Módulo DHT22 utilizado para controle de temperatura e umidade.
+- Chave Táctil (Push Button) para simular detecção de presença de chuva, onde botão precionado significa que está chovendo e envia valor TRUE, se não FALSE.
+<br><br>
+
+**3. ESP32 conectado com Google Sheets (Planilha do Google)**
+
+O ESP32 conecta com Google Sheets, enviando os dados recebidos pelo sensor. Para isso é utilizado o conceito de *IoT (Internet of Things)* ou Internet das Coisas. Para isso, utilizamos o módulo WiFi do ESP32 e bibliotecas que possibilita a conexão com a internet. No caso a `WiFi.h`, `HTTPClient` e `WiFiUdp.h`.
+
+Para conectar com o Google Sheets utilizamos a função ***Apps Script***, e adicionando o código de implementação e inserção dos dados vindo pelo ESP32 a planilha, sendo comunicados através de um link http. O script está disponibilizado no caminho
+```sheel
+FIAP_IA_GS-2025H1/documents/other/google-sheet
+```
+Ao simular, ele conecta-se com ao WiFI e logo em seguida, num *delay* de 3 segundos ele vai enviando e inserindo dados dos sensores a planilha do Google Sheets.
+<hr> 
 
 ## 🗃 Histórico de lançamentos
 
-* 0.5.0 - 06/06/2024
+* 1.0.0 - 02/06/2025
    
 ## 📋 Licença
 
