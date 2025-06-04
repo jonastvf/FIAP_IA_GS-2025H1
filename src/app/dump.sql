@@ -1,6 +1,3 @@
-
--- Script de Criação de Tabelas baseado no XMLA
-
 DROP TABLE IF EXISTS SENSOR_VIBRACAO;
 DROP TABLE IF EXISTS SENSOR_VENTO;
 DROP TABLE IF EXISTS SENSOR_UMIDADE;
@@ -12,11 +9,14 @@ DROP TABLE IF EXISTS CLIMA_AREA;
 DROP TABLE IF EXISTS ALERTAS_DISPARADOS;
 DROP TABLE IF EXISTS AREA_MONITORADA;
 
+
 CREATE TABLE AREA_MONITORADA (
     id_area_monitorada INT PRIMARY KEY AUTO_INCREMENT,
+    nome_area_monitorada VARCHAR,
     declividade_encosta DOUBLE,
     tipo_solo VARCHAR(10),
-    coordenadas_gps INT,
+    coordenadas_lat DECIMAL(10, 7),
+    coordenadas_lng DECIMAL(10, 7),
     presenca_agua_subterranea VARCHAR(12),
     nivel_agua_profundidade_mt DOUBLE,
     pressao_media_poros_kPa DOUBLE,
@@ -47,7 +47,8 @@ CREATE TABLE CLIMA_AREA (
 CREATE TABLE DOMICILIOS_AREA (
     id_domicilio INT PRIMARY KEY AUTO_INCREMENT,
     id_area_monitorada INT,
-    coordenadas_gps INT,
+    lat_domicilio DECIMAL(10, 7),
+    lng_domicilio DECIMAL(10, 7),
     condicao_ocupacao VARCHAR(255),
     material_edificacao VARCHAR(255),
     grau_exposicao_risco INT,
@@ -75,7 +76,8 @@ CREATE TABLE INCIDENTES_REGISTRADOS (
     id_pessoa1 INT,
     timestamp_incidente DATE,
     tipo_incidente_reportado VARCHAR(12),
-    coordenadas_local_incidente INT,
+    lat_local_incidente DECIMAL(10, 7),
+    lng_local_incidente DECIMAL(10, 7),
     id_domicilio INT,
     id_area_monitorada INT,
     FOREIGN KEY (id_pessoa1) REFERENCES PESSOA_DOMICILIO(id_pessoa),
@@ -89,7 +91,8 @@ CREATE TABLE SENSOR_PLUVIOMETRICO (
     timestamp_medicao DATE,
     precipitacao_mm FLOAT,
     status_bateria_sensor DOUBLE,
-    coordenadas_sensor INT,
+    lat_sensor: DECIMAL(10, 7),
+    lng_sensor: DECIMAL(10, 7),
     FOREIGN KEY (id_area_monitorada) REFERENCES AREA_MONITORADA(id_area_monitorada)
 );
 
@@ -100,7 +103,8 @@ CREATE TABLE SENSOR_UMIDADE (
     vwc_conteudo_volumetrico_agua_perc DOUBLE,
     status_bateria_sensor DOUBLE,
     profundidade_sensor_cm DOUBLE,
-    coordenadas_sensor INT,
+    lat_sensor: DECIMAL(10, 7),
+    lng_sensor: DECIMAL(10, 7),
     FOREIGN KEY (id_area_monitorada) REFERENCES AREA_MONITORADA(id_area_monitorada)
 );
 
@@ -111,7 +115,8 @@ CREATE TABLE SENSOR_VENTO (
     velocidade_ms FLOAT,
     direcao_vento_graus INT,
     status_bateria_sensor DOUBLE,
-    coordenadas_sensor INT,
+    lat_sensor: DECIMAL(10, 7),
+    lng_sensor: DECIMAL(10, 7),
     FOREIGN KEY (id_area_monitorada) REFERENCES AREA_MONITORADA(id_area_monitorada)
 );
 
@@ -124,6 +129,7 @@ CREATE TABLE SENSOR_VIBRACAO (
     aceleracao_eixo_z DOUBLE,
     forca_vetorial_vibracao DOUBLE,
     status_bateria_sensor DOUBLE,
-    coordenadas_sensor INT,
+    lat_sensor: DECIMAL(10, 7),
+    lng_sensor: DECIMAL(10, 7),
     FOREIGN KEY (id_area_monitorada) REFERENCES AREA_MONITORADA(id_area_monitorada)
 );
