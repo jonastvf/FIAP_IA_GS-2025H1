@@ -65,7 +65,8 @@ O sistema será composto por:
    - [Areas de risco de deslizamentos - Mapas](https://datageo.ambiente.sp.gov.br/coffey?_48_INSTANCE_KDzpt1cNV1RS_iframe_text=deslizamentos&enviar=Consultar&p_p_id=48_INSTANCE_KDzpt1cNV1RS&_48_INSTANCE_KDzpt1cNV1RS_iframe_avancado=false#_48_INSTANCE_KDzpt1cNV1RS_%3Dhttps%253A%252F%252Fdatageo.ambiente.sp.gov.br%252Fgeoportal%252Fcatalog%252Fsearch%252Fsearch.page%253Ftext%253Ddeslizamentos%2526avancado%253Dfalse)
 
 - [Google Sheets](https://docs.google.com/spreadsheets/): Ferramenta online de planilhas
-   - [Planilha de Monitoramento do Global Solution - Google Sheets](https://docs.google.com/spreadsheets/d/1H1zP9-9wuWSaKQ42PPWfBeWI3orkBrMcKRiPaCnG0vY/edit?usp=sharing)
+ 
+- [Planilha de Monitoramento do Global Solution - Google Sheets](https://docs.google.com/spreadsheets/d/1H1zP9-9wuWSaKQ42PPWfBeWI3orkBrMcKRiPaCnG0vY/edit?usp=sharing)
  
 - Dados sintéticos de treino e teste para o algoritmo GWR: dada natureza do projeto, precisávamos gerar uma massa de dados para treinar o nosso modelo IA, mas não tinhamos o historico das métricas associadas aos nossos sensores disponíveis. Assim, optamos pela abordagem de criar dados sintéticos: treinamos o agente de IA Manus com o nosso MER, a proposta de trabalho da GS, nossa proposta de trabalho e os dados do Data GEO (acima). Posteriormente, solicitamos a ele que criasse 2 fontes de dados, uma para treino e outra para teste, combinando os dados das zonas de risco conhecidas e simulando os dados para as principais métricas e dimensões que compõem o modelo GWR que treinamos. O prompt está disponível [aqui](https://manus.im/share/ipbIW97xOv31p6r8YH0Ohb?replay=1).
 

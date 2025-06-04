@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "author": "Raphael Silva",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 28.8, "left": 91.24, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": -97.3, "left": -192.2, "attrs": {} },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 51.2,
+      "left": -143.2,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": 249.9,
+      "left": -63,
+      "attrs": { "humidity": "30.5", "temperature": "57.2" }
+    },
+    { "type": "wokwi-potentiometer", "id": "pot2", "top": -97.3, "left": -19.4, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot3", "top": -97.3, "left": -105.8, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 169.4,
+      "left": -86.4,
+      "attrs": { "color": "grey", "xray": "1" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "pot2:VCC", "esp:5V", "red", [ "v48", "h47.2", "v211.2" ] ],
+    [ "pot3:VCC", "esp:5V", "red", [ "v48", "h133.6", "v211.2" ] ],
+    [ "pot1:VCC", "esp:5V", "red", [ "v48", "h220", "v211.2" ] ],
+    [ "ldr1:VCC", "esp:5V", "red", [ "h48", "v163.2" ] ],
+    [ "dht1:VCC", "esp:5V", "red", [ "v48", "h124.8", "v-182.4" ] ],
+    [ "dht1:GND", "esp:GND.1", "black", [ "v19.2", "h86.4", "v9.6" ] ],
+    [ "ldr1:GND", "esp:GND.1", "black", [ "h38.4", "v105.2" ] ],
+    [ "pot2:GND", "esp:GND.1", "black", [ "v57.6", "h57.6", "v153.6" ] ],
+    [ "pot3:GND", "esp:GND.1", "black", [ "v57.6", "h144", "v153.6" ] ],
+    [ "pot1:GND", "esp:GND.1", "black", [ "v57.6", "h230.4", "v153.6" ] ],
+    [ "pot2:SIG", "esp:33", "blue", [ "v38.4", "h38", "v115.2", "h38.25" ] ],
+    [ "esp:4", "dht1:SDA", "white", [ "h19.2", "v86.4", "h-124.8", "v134.4", "h-124.8" ] ],
+    [ "esp:12", "btn1:2.r", "gray", [ "v0", "h-38.25", "v28.8" ] ],
+    [ "btn1:1.r", "esp:GND.1", "black", [ "v0" ] ],
+    [ "ldr1:AO", "esp:34", "orange", [ "h0" ] ],
+    [ "pot3:SIG", "esp:32", "blue", [ "v38.4", "h124.4", "v105.6" ] ],
+    [ "pot1:SIG", "esp:35", "blue", [ "v38.4", "h210.8", "v96" ] ]
+  ],
+  "dependencies": {}
+}
