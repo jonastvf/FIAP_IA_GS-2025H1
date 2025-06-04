@@ -47,13 +47,13 @@ Ele deverá ser capaz de descrever e medir condições de risco como: tipo do so
 
 O sistema deverá ser capaz de armazenar estas informações, gerar predições, alertas e calculos de impacto para simulação de ações coordenadas. 
 
-Por se tratar de zonas de risco conhecidas, prevemos o engajamento da comunidade habitante do local por meio de um aplicativo que poderá compartilhar a predição de risco para população, oferecer informações e permitir que a comunidade envie fotos e alertas a defesa civil. O aplicativo também terá por objetivo estreitar a comunicação entre cidadãos e defesa civil. 
+Por se tratar de zonas de risco conhecidas, prevemos o engajamento da comunidade habitante do local por meio de alertas por celular, mas também alarmes que soem localmente. Futuramente, também imaginamos outras estratégias possíveis de engajamento da comunidade.
 
 **4. Como?**
 
 O sistema será composto por:
 
-- Banco de dados ("datalake"): armazenará todas as informações relevantes das áreas de risco e também do app
+- Banco de dados: armazenará todas as informações relevantes das áreas de risco e também do app
 - Sensores IOT: implantados localmente, enviam informações via internet e rádio
 - Sistema de Alerta: compõe uma rede de alertas, com app, mensagens, avisos sonoros locais entre outros
 - Algoritimos de IA: a partir dos dados são capazes de prever condições em que o sinistro pode ocorrer, poderá ser treinado a priori (por meio de estudos técninos e simulações) e a posteri (por dados de outros sinistros).
@@ -66,6 +66,8 @@ O sistema será composto por:
 
 - [Google Sheets](https://docs.google.com/spreadsheets/): Ferramenta online de planilhas
    - [Planilha de Monitoramento do Global Solution - Google Sheets](https://docs.google.com/spreadsheets/d/1H1zP9-9wuWSaKQ42PPWfBeWI3orkBrMcKRiPaCnG0vY/edit?usp=sharing)
+ 
+- Dados sintéticos de treino e teste para o algoritmo GWR: dada natureza do projeto, precisávamos gerar uma massa de dados para treinar o nosso modelo IA, mas não tinhamos o historico das métricas associadas aos nossos sensores disponíveis. Assim, optamos pela abordagem de criar dados sintéticos: treinamos o agente de IA Manus com o nosso MER, a proposta de trabalho da GS, nossa proposta de trabalho e os dados do Data GEO (acima). Posteriormente, solicitamos a ele que criasse 2 fontes de dados, uma para treino e outra para teste, combinando os dados das zonas de risco conhecidas e simulando os dados para as principais métricas e dimensões que compõem o modelo GWR que treinamos. O prompt está disponível [aqui](https://manus.im/share/ipbIW97xOv31p6r8YH0Ohb?replay=1).
 
 ## 📁 Estrutura de pastas
 
