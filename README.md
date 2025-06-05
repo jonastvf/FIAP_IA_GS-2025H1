@@ -59,6 +59,13 @@ O sistema será composto por:
 - Algoritimos de IA: a partir dos dados são capazes de prever condições em que o sinistro pode ocorrer, poderá ser treinado a priori (por meio de estudos técninos e simulações) e a posteri (por dados de outros sinistros).
 - Ingestor de dados: recebe informações de outras fontes para melhorar as predições, exemplos: sistemas meterologicos, mapas e satélites. 
 
+**5. Arquitetura da solução**
+
+A imagem abaixo representa a arquitetura proposta do sistema, integrando sensores, banco de dados e modelos de IA:
+
+![Imagem do WhatsApp de 2025-06-05 à(s) 13 03 33_490367c7](https://github.com/user-attachments/assets/9dcb66d5-f2ff-4ce0-9013-e1cead20739c)
+
+
 ## 💽 Fontes de dados: 
 
 - [Data GEO](https://datageo.ambiente.sp.gov.br/temas): Sistema ambiental do governo estadual de São Paulo
