@@ -130,6 +130,23 @@ FIAP_IA_GS-2025H1/documents/other/google-sheet
 Ao simular, ele conecta-se com ao WiFI e logo em seguida, num *delay* de 3 segundos ele vai enviando e inserindo dados dos sensores a planilha do Google Sheets.
 <hr> 
 
+
+### 🤖 Modelo GWR
+
+O sistema de previsão e alertas foi construido no R, utilizando o modelo de Machine Learning chamado Regressão Geográficamente Ponderada (GWR). A escolha do modelo se deu pela natureza do problema, prever riscos de deslizamento em diferentes áreas partindo em um mesmo conjunto de variáveis monitoradas. Assim, entendemos que a ponderação do modelo seria mais adequada a dispersão do fenômeno a ser observado em cada área.  
+
+#### 🔧 Etapa para executar o projeto
+
+**1. Instalar as packages e libraries** 
+
+Os pacotes e bibliotecas necessárias para rodar o modelo estão todas no código. O ponto de atenção se dá pelos dados, para os quais será necessário realizar uma alteração do caminho de acesso aos "csvs". Os dados estão divididos em treino e teste, e se encontram disponíveis na pasta src/Dados deste repositório. 
+
+
+**2. O arquivo está presente na seguinte caminho:**
+
+O modelo está disponível na pasta src/Modelo GWR deste repositório. Na pasta, é possível encontrar o script em R, mas também o html que contém o mapa gerado apartir das saídas do modelo, e nossa interpretação do níveis de risco e seu indicativo de monitoramento. 
+
+
 ## 🗃 Histórico de lançamentos
 
 * 1.0.0 - 02/06/2025
