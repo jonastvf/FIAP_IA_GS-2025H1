@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="CLIMA_AREA" directorySegmentName="seg_0" id="2915DE41-A01B-0215-565B-6508A7F45C98">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="precipitacao_esperada" id="02F233A9-F7A8-3D32-0A13-B757C8803079">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_area" id="037691AE-37A0-4E2A-2C99-6BFF322C31BD">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tipo_microclima" id="638A23B2-CFE3-7383-7A57-A09FB99D225C">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_clima" id="74A8547B-C6C0-5F58-AD27-43BECEF6C4F2">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="temperatura_esperada" id="7BBBB595-324E-63A3-EAAB-ED0F32F61A21">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="timestamp_previsao_climatica" id="8700CD82-FE2B-E13D-4A89-AC32E03BE9FA">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="condicoes_climaticas_esperadas" id="CBC3558D-8C30-3502-1C1C-2F86FDF61A40">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_CLIMA_AREA_AREA_MONITORADA" id="108AEC19-5CD0-FC29-0713-4820F7C5D3B2">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_CLIMA_AREA" id="D2FEACDE-698D-D49F-5C78-F3C8E9C0E21B">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

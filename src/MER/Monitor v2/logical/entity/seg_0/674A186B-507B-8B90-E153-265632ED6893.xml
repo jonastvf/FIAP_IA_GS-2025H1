@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="674A186B-507B-8B90-E153-265632ED6893" name="AREA MONITORADA">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>7C3420F2-C1B7-B6F6-8676-8DE8418B1E04</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id area" id="7F8E4F8A-E9CD-8248-19A7-337222728453">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>127BAFD3-502D-B73B-7175-6D9F7BE3B115</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="declividade encosta" id="D10011FC-D09E-6C84-EBCD-A37826705B62">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>81CDFB3A-1CA3-C34F-390A-A771C657AFC9</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo solo" id="31E60796-01B1-7095-B6EE-13A4620CE21F">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>97C0EEB7-7A70-7D6F-C187-37376C02F811</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>EDFC22EE-4D26-A51D-277B-58CEFACC5D5A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="coordenadas gps" id="ED4EB10B-6F7C-869A-FDF8-E71AA8ECFD98">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>C718D10C-ED78-70A1-2B7D-8344BF68B191</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="presenca agua subterranea" id="591F38F4-4D3F-7619-8FF4-DD50592B8C89">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>86617672-D08D-CF1B-5D51-86CC69C3EA3B</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>72292F6C-9628-C78A-18CF-671C9582C14B</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nivel agua profundidade mt" id="13E35FEB-73C9-7EDA-6FB5-345599DCA027">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>E7B15DEE-5A57-5523-B3F3-AEBC226EC437</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pressao media poros kPa" id="7EA0BFF1-3A95-6253-2A0F-4FA9A833FFB1">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>5E119BBB-10B1-A459-7C20-F07EA0897CF0</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="condicoes vegetacao" id="1C32D08E-52EC-71AD-10B5-D94AF8E52F02">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Descreve as condições da vegetação local como fator de risco ou proteção.]]></commentInRDBMS>
+<generatorID>6DC7515E-8393-2AAD-08CA-EF500D47F307</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<domain>05AF94EC-0873-2714-F977-6365065CD110</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="26170241-501C-E1CC-BC5B-80BFEDE6FCCA" name="PK AREA MONITORADA">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>6B6A1CC5-C884-46A6-A9E0-781CD41C303E</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7F8E4F8A-E9CD-8248-19A7-337222728453</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

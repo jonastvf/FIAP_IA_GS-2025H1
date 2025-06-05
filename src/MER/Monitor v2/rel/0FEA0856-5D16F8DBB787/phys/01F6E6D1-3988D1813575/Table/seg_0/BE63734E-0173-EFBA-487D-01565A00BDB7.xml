@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="PESSOA_DOMICILIO" directorySegmentName="seg_0" id="BE63734E-0173-EFBA-487D-01565A00BDB7">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nome_pessoa" id="4405A8C8-1A46-00DE-71E4-1539887BC82D">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="user_login_app" id="624C4D5F-CAA0-E955-884F-CBABB57B82E6">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_pessoa" id="66E8F09E-5B00-B647-B118-2E1D48591646">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tipo_necessidade_especial" id="6C4E6EDC-372B-F25F-0CB1-5FB459AF2D53">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="telefone_celular" id="833195FD-6DF4-2A18-BEEB-C1F965E6F837">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_area" id="8A794080-E4F4-DD11-5B16-E178303B6A81">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_domicilio" id="92B407AD-7A6B-7FDB-EE6D-71D7EB850C99">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cpf_pessoa" id="A2754CD1-9D19-EE0D-EEC8-7CC4FFD982DD">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pessoa_pcd" id="A9FFFB2B-8372-BE70-8093-D4F857CF536C">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="contato_primario" id="C54F85F2-48A4-8B68-4CED-9F6BCEF12645">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_PESSOA_DOMICILIO_DOMICILIOS_AREA" id="A6FE9EEA-9301-9416-B99E-9A7240DA12C0">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_PESSOA_DOMICILIO" id="9752FD57-6C52-B7B9-063B-AA99F590C9FE">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

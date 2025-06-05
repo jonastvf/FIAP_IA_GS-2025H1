@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="201F46B3-6952-A5EB-50A8-10A3DFB955E7" name="SENSOR_UMIDADE">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>DAFF7006-EB70-F8CF-B253-56A3BF4988C8</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sensor_umidade" id="B752157E-F971-6144-CAC0-0ED63B8D9BD1">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>5A0D037B-0943-F5FC-B339-81DA1885C921</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_area" id="2F9855E5-87F6-14A9-A58C-A6753F49EB98">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>541BB5B6-A5DA-767A-2D66-F9082EE2FA41</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2A879381-E76C-C17B-B606-5E8BC29A8C2A" referredColumn="127BAFD3-502D-B73B-7175-6D9F7BE3B115"/>
+</associations>
+</Column>
+<Column name="timestamp_medicao" id="C18814AE-F1DA-F288-D28D-857D7123E61E">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>1D569F64-C644-D764-1344-E8E8733C5BE5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>B1670A39-1F50-9621-59E6-9BD94FAC48EC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vwc_conteudo_volumetrico_agua_perc" id="0774F78E-1350-C722-B155-A635B8143064">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>B7AFDB55-1B66-CAC7-E46C-A873850620BE</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_bateria_sensor" id="0417EE19-6426-7269-B685-C33FEB74C0D3">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>BEB13DDE-0356-58A1-123F-FDC0ADEB4884</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="profundidade_sensor_cm" id="8A3E5F13-0A98-0841-86AE-035E7958DBCC">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[Profundidade de instalação do sensor em centimetros]]></commentInRDBMS>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>0D754C6D-B925-F180-E5F1-8A36DCE4AC20</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="latitude_sensor" id="A27C386C-10B0-B08E-5007-91D7C1297676">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>CE105958-9ABC-8079-48FB-BB3DD96CA2D8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longitude_sensor" id="5F36A973-26B6-0ABC-5DFD-1CC6A4447898">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:48:34 UTC</createdTime>
+<generatorID>EDADF74E-5451-FA53-84D7-DFBBE1D0D7ED</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="97ACF3D2-1425-6E41-D185-8C8894CE0EC7" name="PK_SENSOR_UMIDADE">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>73D1A7CB-52BC-61C2-816A-C2A6301B286E</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B752157E-F971-6144-CAC0-0ED63B8D9BD1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7CEFE230-20BC-0724-E82D-B9185DFABEB0" name="FK_SENSOR_UMIDADE_AREA_MONITORADA">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2F9855E5-87F6-14A9-A58C-A6753F49EB98"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,148 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="01C5966A-66CE-F481-F42B-B488D7ACB047" name="SENSOR UMIDADE">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>201F46B3-6952-A5EB-50A8-10A3DFB955E7</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id sensor umidade" id="CDED40F4-ECEA-6E99-09DF-FD5FB167D659">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>B752157E-F971-6144-CAC0-0ED63B8D9BD1</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id area" id="19E2C9DB-9D56-7C93-63EC-0DE27C81B71E">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>52383FC7-66F6-54F3-7770-2A8AC69CBEED</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7F8E4F8A-E9CD-8248-19A7-337222728453</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="timestamp medicao" id="02A835FB-EEBA-7B33-893A-69A188213D44">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>C18814AE-F1DA-F288-D28D-857D7123E61E</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>B1670A39-1F50-9621-59E6-9BD94FAC48EC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vwc conteudo volumetrico agua perc" id="C980FEFF-E932-2E0A-680E-0E1886DDD971">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>0774F78E-1350-C722-B155-A635B8143064</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status bateria sensor" id="6D66578B-E564-D7B7-8E21-76DAE81EC6DD">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>0417EE19-6426-7269-B685-C33FEB74C0D3</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="profundidade sensor cm" id="409ED1ED-4DFC-D9AF-4EE5-51E1896CA98E">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Profundidade de instalação do sensor em centimetros]]></commentInRDBMS>
+<generatorID>8A3E5F13-0A98-0841-86AE-035E7958DBCC</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="latitude sensor" id="ECAF8BE6-943B-DB65-AB57-993A16358E59">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>A27C386C-10B0-B08E-5007-91D7C1297676</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="longitude sensor" id="EDADF74E-5451-FA53-84D7-DFBBE1D0D7ED">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:45:43 UTC</createdTime>
+<generatorID>A27C386C-10B0-B08E-5007-91D7C1297676</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E77C00E7-BBE2-6E85-05CE-BD3CEDA14C30" name="PK SENSOR UMIDADE">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>97ACF3D2-1425-6E41-D185-8C8894CE0EC7</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CDED40F4-ECEA-6E99-09DF-FD5FB167D659</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

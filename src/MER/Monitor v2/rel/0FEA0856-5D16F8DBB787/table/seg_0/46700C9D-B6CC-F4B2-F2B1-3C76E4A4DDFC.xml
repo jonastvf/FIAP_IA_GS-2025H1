@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="46700C9D-B6CC-F4B2-F2B1-3C76E4A4DDFC" name="SENSOR_VIBRACAO">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>9602D19F-8E57-8C72-150D-CE5B74497CB9</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sensor_vibracao" id="0F102088-4572-456C-0F03-E7D4BF8989D2">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>131FAA40-9409-2622-701B-EEBD523AC169</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_area" id="F7942F0D-782C-7F91-9122-59A952504780">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>1CFAB7C7-822C-1F4C-CBFC-A2EBD3C9367D</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0DB517BF-2C87-6065-69CC-DE22415D1719" referredColumn="127BAFD3-502D-B73B-7175-6D9F7BE3B115"/>
+</associations>
+</Column>
+<Column name="timestamp_medicao" id="D65F9BEE-2598-6763-04B1-CCD66E22F839">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>894B431A-79C7-2022-7D36-28F70E34A4F3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>B1670A39-1F50-9621-59E6-9BD94FAC48EC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="aceleracao_eixo_x" id="40B117C2-9E89-2AEF-EE6B-F53F93166BC6">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<commentInRDBMS><![CDATA[O sensor funciona com um acelerometro. ]]></commentInRDBMS>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>301729EA-191B-A776-0E28-77A5C3E77B90</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="aceleracao_eixo_y" id="4367FB7D-9BE3-0197-BDAB-4FC5E884048C">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>54A49DC0-136C-F658-4616-25D684C40FAC</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="aceleracao_eixo_z" id="03A83366-73E7-1181-CC43-225F7952FF37">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>DAF188A1-EBD6-162C-C401-4523B7ACEB12</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="forca_vetorial_vibracao" id="A2D2E260-14BE-2307-FB5B-824BAB950B3A">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>466DE8B2-6546-C3CD-C1E0-8C3D5C1A87B2</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_bateria_sensor" id="09F3B4D7-B6B0-0FE7-FD9F-92FC1A4A3362">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>60389559-9AA6-0363-0F5B-C3D27C870DB6</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="coordenadas_sensor" id="379817D0-9A06-A2A3-B644-20250DC46451">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>2E8DAB3A-1F99-1A21-23F2-D9198E6A5A6C</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="latitude_sensor" id="F2F6E47D-6481-39DF-22B2-BF86360E6605">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:48:34 UTC</createdTime>
+<generatorID>119A2D06-C270-8351-5F85-B5790FD35BA3</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longiitude_sensor" id="5CF011EA-7302-6E89-2DD6-236FB31A215D">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:48:34 UTC</createdTime>
+<generatorID>E4DBF255-FC50-2DA8-1980-E42DC44EF2C9</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D2F26E82-282D-28F7-901D-88EF2352688F" name="PK_SENSOR_VIBRACAO">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>45540E42-D514-5935-3418-C887ED3AA452</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F102088-4572-456C-0F03-E7D4BF8989D2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4A6D60CE-869F-E6EB-F748-A408506A0ED6" name="FK_SENSOR_VIBRACAO_AREA_MONITORADA">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F7942F0D-782C-7F91-9122-59A952504780"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

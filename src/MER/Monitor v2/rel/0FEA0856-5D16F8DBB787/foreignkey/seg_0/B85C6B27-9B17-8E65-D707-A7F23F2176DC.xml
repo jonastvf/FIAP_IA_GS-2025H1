@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B85C6B27-9B17-8E65-D707-A7F23F2176DC" containerWithKeyObject="BE63734E-0173-EFBA-487D-01565A00BDB7" localFKIndex="A6FE9EEA-9301-9416-B99E-9A7240DA12C0" name="FK_PESSOA_DOMICILIO_DOMICILIOS_AREA">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>1044926C-EFC6-49B9-FB8A-3E9E83C3A926</importedID>
+<referredTableLongName>DOMICILIOS_AREA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>49AC125C-1204-B1D6-DADA-2101DA90A1AB</referredTableID>
+<keyObject>1B9AE2A0-C6E9-BD46-96F3-B953C2E1721D</keyObject>
+<referredKeyID>1B9AE2A0-C6E9-BD46-96F3-B953C2E1721D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_domicilio,id_area</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

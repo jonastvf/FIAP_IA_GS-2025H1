@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_DOMICILIOS_AREA_AREA_MONITORADA" directorySegmentName="seg_0" id="8BD611D5-F8D2-8A4F-BD3C-7963D115F448">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>2B298F07-5A46-6080-7F87-9AA1A7A60429</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<sourcePk>26170241-501C-E1CC-BC5B-80BFEDE6FCCA</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>674A186B-507B-8B90-E153-265632ED6893</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>C98C8B4E-AF62-9FDD-A09B-34CEB5B13D91</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

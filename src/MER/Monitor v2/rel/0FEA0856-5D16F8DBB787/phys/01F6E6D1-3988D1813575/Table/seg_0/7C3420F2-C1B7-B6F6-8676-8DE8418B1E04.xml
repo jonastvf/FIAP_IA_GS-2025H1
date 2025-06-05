@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="AREA_MONITORADA" directorySegmentName="seg_0" id="7C3420F2-C1B7-B6F6-8676-8DE8418B1E04">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_area" id="127BAFD3-502D-B73B-7175-6D9F7BE3B115">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pressao_media_poros_kPa" id="5E119BBB-10B1-A459-7C20-F07EA0897CF0">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="condicoes_vegetacao" id="6DC7515E-8393-2AAD-08CA-EF500D47F307">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="declividade_encosta" id="81CDFB3A-1CA3-C34F-390A-A771C657AFC9">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="presenca_agua_subterranea" id="86617672-D08D-CF1B-5D51-86CC69C3EA3B">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="tipo_solo" id="97C0EEB7-7A70-7D6F-C187-37376C02F811">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="coordenadas_gps" id="C718D10C-ED78-70A1-2B7D-8344BF68B191">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nivel_agua_profundidade_mt" id="E7B15DEE-5A57-5523-B3F3-AEBC226EC437">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_AREA_MONITORADA" id="6B6A1CC5-C884-46A6-A9E0-781CD41C303E">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

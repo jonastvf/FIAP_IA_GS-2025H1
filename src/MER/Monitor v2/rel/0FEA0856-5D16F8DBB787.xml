@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Monitor deslizamentos" id="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" mainViewID="C524180A-C862-BB48-7462-19E31C8549BB">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:26 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>01F6E6D1-21D0-CFBD-ABDD-3988D1813575</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>Monitor deslizamentos.ddl</fileName>
+<pathName>C:\Users\Userv\OneDrive\Documentos\Fiap\4a Fase\GS1\MER - Files</pathName>
+<dbType>17</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

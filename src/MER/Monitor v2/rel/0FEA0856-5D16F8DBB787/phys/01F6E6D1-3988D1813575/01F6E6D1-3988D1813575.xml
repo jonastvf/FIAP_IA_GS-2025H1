@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<StorageDesignOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.StorageDesignOraclev20c" name="Oracle Database 21c" id="7B1062D7-586D-B471-5663-392068B77ED7" siteID="01F6E6D1-21D0-CFBD-ABDD-3988D1813575" siteName="Oracle Database 21c" siteType="17">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:39 UTC</createdTime>
+<ownerDesignName>Monitor de Deslizamentos</ownerDesignName>
+</StorageDesignOraclev20c>

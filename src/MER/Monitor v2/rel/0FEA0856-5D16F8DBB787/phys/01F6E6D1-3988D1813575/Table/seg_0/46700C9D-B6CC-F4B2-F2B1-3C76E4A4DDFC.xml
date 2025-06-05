@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="SENSOR_VIBRACAO" directorySegmentName="seg_0" id="46700C9D-B6CC-F4B2-F2B1-3C76E4A4DDFC">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="aceleracao_eixo_z" id="03A83366-73E7-1181-CC43-225F7952FF37">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="status_bateria_sensor" id="09F3B4D7-B6B0-0FE7-FD9F-92FC1A4A3362">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_sensor_vibracao" id="0F102088-4572-456C-0F03-E7D4BF8989D2">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="coordenadas_sensor" id="379817D0-9A06-A2A3-B644-20250DC46451">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="aceleracao_eixo_x" id="40B117C2-9E89-2AEF-EE6B-F53F93166BC6">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="aceleracao_eixo_y" id="4367FB7D-9BE3-0197-BDAB-4FC5E884048C">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="forca_vetorial_vibracao" id="A2D2E260-14BE-2307-FB5B-824BAB950B3A">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="timestamp_medicao" id="D65F9BEE-2598-6763-04B1-CCD66E22F839">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_area" id="F7942F0D-782C-7F91-9122-59A952504780">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_SENSOR_VIBRACAO_AREA_MONITORADA" id="4A6D60CE-869F-E6EB-F748-A408506A0ED6">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_SENSOR_VIBRACAO" id="D2F26E82-282D-28F7-901D-88EF2352688F">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>

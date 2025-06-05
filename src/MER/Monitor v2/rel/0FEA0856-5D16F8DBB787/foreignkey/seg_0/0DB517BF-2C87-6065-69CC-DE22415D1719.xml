@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0DB517BF-2C87-6065-69CC-DE22415D1719" containerWithKeyObject="46700C9D-B6CC-F4B2-F2B1-3C76E4A4DDFC" localFKIndex="4A6D60CE-869F-E6EB-F748-A408506A0ED6" name="FK_SENSOR_VIBRACAO_AREA_MONITORADA">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>36BB4118-B137-BB0B-9FED-8D116C4B9021</importedID>
+<referredTableLongName>AREA_MONITORADA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7C3420F2-C1B7-B6F6-8676-8DE8418B1E04</referredTableID>
+<keyObject>6B6A1CC5-C884-46A6-A9E0-781CD41C303E</keyObject>
+<referredKeyID>6B6A1CC5-C884-46A6-A9E0-781CD41C303E</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>id_area</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

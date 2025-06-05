@@ -1,0 +1,147 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="FC3F02BD-D4FF-6F51-DF5A-19690014A0FF" name="SENSOR VENTO">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>69E4B465-4B08-0674-8F75-5AE38478A9BB</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id sensor vento" id="FAB7F1B2-C3BD-DBF7-97C5-F4A6F93E96AC">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>DF3BF5B7-2134-B09B-9146-334452CCA90F</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id area" id="2DAB9620-EEE7-764E-5ED5-1DAE443B94AD">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>373922FD-54E0-C287-DCF7-D454246150B8</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>7F8E4F8A-E9CD-8248-19A7-337222728453</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="timestamp medicao" id="D39C9D97-D8E5-2266-A9D5-593C5042EEC2">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>502AF3C9-4CF5-4686-B380-2D5657BBDD60</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>B1670A39-1F50-9621-59E6-9BD94FAC48EC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="velocidade ms" id="0E24292D-9CF8-A27B-3700-042AE2523867">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>88E0DECD-DA94-6AEA-DDEF-C0D562DF417E</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>6C078956-8A7D-95AF-25CA-6EC98C0167A1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="direcao vento graus" id="3C9F05D9-60D7-313E-BB1D-EC47E3F9B42A">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>609E1BD0-0D71-B569-E033-EE04E607FC55</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status bateria sensor" id="1A8287FE-2DD3-A11E-F988-DBB405366704">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>D134D44D-BD0A-0644-7719-F515C101ACE7</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="latitude sensor" id="47AEEB55-F580-B802-D000-8CB689E37150">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:47:06 UTC</createdTime>
+<generatorID>A27C386C-10B0-B08E-5007-91D7C1297676</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="longiitude sensor" id="A98A43DA-C2E9-22A8-9DC4-91DAF7DFC787">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:47:06 UTC</createdTime>
+<generatorID>A27C386C-10B0-B08E-5007-91D7C1297676</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C258E4AB-B924-B4D8-9389-27BAC58BD012" name="PK SENSOR VENTO">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>42070524-F39F-74C9-14E1-F8D332C24CD1</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>FAB7F1B2-C3BD-DBF7-97C5-F4A6F93E96AC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

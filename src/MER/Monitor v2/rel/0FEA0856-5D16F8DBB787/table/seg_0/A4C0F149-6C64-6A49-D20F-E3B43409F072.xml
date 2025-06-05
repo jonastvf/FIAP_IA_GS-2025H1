@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A4C0F149-6C64-6A49-D20F-E3B43409F072" name="SENSOR_PLUVIOMETRICO">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>07E8DB4B-2D86-0746-55C5-82ADDE99F60D</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_sensor_pluviometrico" id="39C71B7F-584E-36C7-380B-8C3AB3DB9BFB">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>61184EB1-5AFD-64B6-42CD-DF096DAFF35C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_area" id="F252E48C-79A3-BCCE-EC04-C0E4417D36D0">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>8282B594-7814-7C07-61C8-433FB2283F85</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3FABF60E-E6C9-8929-20A7-737AAF1E0C86" referredColumn="127BAFD3-502D-B73B-7175-6D9F7BE3B115"/>
+</associations>
+</Column>
+<Column name="timestamp_medicao" id="1C341BFF-569F-51B3-5D6D-F6AE6D2F40F5">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>3004124E-B81F-E07B-66DE-78F1B6561F5E</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>B1670A39-1F50-9621-59E6-9BD94FAC48EC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="precipitacao_mm" id="9DA07D87-4AC0-8C4D-FD8F-51148328B89C">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>27B129B7-7198-0173-D2D1-41D91F864837</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<domain>6C078956-8A7D-95AF-25CA-6EC98C0167A1</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status_bateria_sensor" id="B9A9E792-5135-3D92-4F62-8F37126BAE80">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>E8D87AD7-B82C-266D-4969-AE738523EC52</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="coordenadas_sensor" id="66723E93-5BD8-5896-99EB-8FAD48474A0B">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>DBC001CE-128A-38EC-F2D7-63CF86277F5B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="latitude_sensor" id="4D278FDD-9762-2805-316B-BB5E7C137B36">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:48:34 UTC</createdTime>
+<generatorID>5B9CF388-2421-E58A-6EF9-3B37B4F60D40</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="longiitude_sensor" id="F9018DC3-0190-9C26-D6AD-76E6F5F04293">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:48:34 UTC</createdTime>
+<generatorID>EAD5A234-75B2-02ED-0296-28281F3D5B53</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48E01907-9753-9097-3FA4-3C456592CF4E" name="PK_SENSOR_PLUVIOMETRICO">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>4F14B3B9-AC9F-F96F-CCB2-25B24EDF0209</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="39C71B7F-584E-36C7-380B-8C3AB3DB9BFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BC37CFE0-3D7E-59FD-BAE0-46EC2B17F0B2" name="FK_SENSOR_PLUVIOMETRICO_AREA_MONITORADA">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F252E48C-79A3-BCCE-EC04-C0E4417D36D0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

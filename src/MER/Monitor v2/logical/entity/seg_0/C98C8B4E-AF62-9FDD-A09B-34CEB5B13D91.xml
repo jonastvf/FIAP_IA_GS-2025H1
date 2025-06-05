@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="C98C8B4E-AF62-9FDD-A09B-34CEB5B13D91" name="DOMICILIOS AREA">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>49AC125C-1204-B1D6-DADA-2101DA90A1AB</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id domicilio" id="A6E5DF85-1F52-2412-404E-8AABAE471C84">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>F56B2CBD-A878-429E-FC3D-29FAF9E1C80F</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id area" id="D162D5ED-15CC-4FF6-62EF-1A6D31274C06">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>8BD611D5-F8D2-8A4F-BD3C-7963D115F448</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<referedAttribute>7F8E4F8A-E9CD-8248-19A7-337222728453</referedAttribute>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="coordenadas gps" id="0B3FC818-8C8A-9E6C-0995-21F0BD8040B7">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>9B58A656-68C2-DC02-59A5-E1962008BE04</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="condicao ocupacao" id="592B1889-DF3B-742C-DD00-71CAF197BB83">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Condição de ocupação do terreno:
+- Regular
+- Em processo de reconhecimento de usucapião
+- Irregular]]></commentInRDBMS>
+<generatorID>194D206A-27C3-F82B-5183-9174799C2BBF</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2B24438F-55F4-40F4-5372-FB25FA231377</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="material edificacao" id="06E65ABE-183B-5EF1-961B-3C9263A9758E">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Material no qual domicilio foi edificado:
+- Alvenaria
+- Madeira
+- Misto
+- Etc.]]></commentInRDBMS>
+<generatorID>64790DEF-FBC0-52A1-1244-D5CA3BCA284D</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>2B24438F-55F4-40F4-5372-FB25FA231377</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="grau exposicao risco" id="731DCF49-6628-2216-949A-D44D4CE065EE">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[Em uma escala de risco, qual grau medido de exposição.
+]]></commentInRDBMS>
+<generatorID>36E28395-326C-33F7-435A-395E27447D4B</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo risco exposicao" id="CEC3B2B1-81B3-72A1-9F3E-0B1164EFDC66">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>F7684547-7BB4-087F-D390-B23642BA8E7E</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>813A4E8D-3DB0-4954-6037-58732209029A</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BD026AED-F48C-D54F-4765-F5F44DB223B1" name="PK DOMICILIOS AREA">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>1B9AE2A0-C6E9-BD46-96F3-B953C2E1721D</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A6E5DF85-1F52-2412-404E-8AABAE471C84</attributeRef>
+<attributeRef>D162D5ED-15CC-4FF6-62EF-1A6D31274C06</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

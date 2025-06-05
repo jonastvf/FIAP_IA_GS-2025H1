@@ -1,7 +1,7 @@
 -- Gerado por Oracle SQL Developer Data Modeler 24.3.1.351.0831
---   em:        2025-05-29 19:19:17 BRT
---   site:      Oracle Database 11g
---   tipo:      Oracle Database 11g
+--   em:        2025-06-05 17:49:39 BRT
+--   site:      Oracle Database 21c
+--   tipo:      Oracle Database 21c
 
 
 
@@ -18,6 +18,7 @@ CREATE TABLE ALERTAS_DISPARADOS
      efetividade_alerta VARCHAR2 (15) , 
      acao_alerta        VARCHAR2 (12 CHAR) 
     ) 
+    LOGGING 
 ;
 
 COMMENT ON COLUMN ALERTAS_DISPARADOS.efetividade_alerta IS 'Se o alerta foi:
@@ -48,6 +49,7 @@ CREATE TABLE AREA_MONITORADA
 --  ERROR: Datatype UNKNOWN is not allowed 
                     
     ) 
+    LOGGING 
 ;
 
 COMMENT ON COLUMN AREA_MONITORADA.condicoes_vegetacao IS 'Descreve as condições da vegetação local como fator de risco ou proteção.' 
@@ -66,6 +68,7 @@ CREATE TABLE CLIMA_AREA
      temperatura_esperada           NUMBER (6) , 
      condicoes_climaticas_esperadas VARCHAR2 (10) 
     ) 
+    LOGGING 
 ;
 
 COMMENT ON COLUMN CLIMA_AREA.condicoes_climaticas_esperadas IS 'Neblina, Sol aberto, etc. ' 
@@ -88,6 +91,7 @@ CREATE TABLE DOMICILIOS_AREA
      grau_exposicao_risco INTEGER , 
      tipo_risco_exposicao VARCHAR2 (15 CHAR) 
     ) 
+    LOGGING 
 ;
 
 COMMENT ON COLUMN DOMICILIOS_AREA.condicao_ocupacao IS 'Condição de ocupação do terreno:
@@ -118,12 +122,15 @@ CREATE TABLE INCIDENTES_REGISTRADOS
      tipo_incidente_reportado    VARCHAR2 (12) , 
      coordenadas_local_incidente NUMBER , 
      id_domicilio                INTEGER  NOT NULL , 
-     id_area                     INTEGER  NOT NULL 
+     id_area                     INTEGER  NOT NULL , 
+     id_alerta                   INTEGER  NOT NULL , 
+     id_area2                    INTEGER  NOT NULL 
     ) 
+    LOGGING 
 ;
 
 ALTER TABLE INCIDENTES_REGISTRADOS 
-    ADD CONSTRAINT PK_INCIDENTES_REGISTRADOS PRIMARY KEY ( id_incidente_reportado, id_pessoa, id_domicilio, id_area ) ;
+    ADD CONSTRAINT PK_INCIDENTES_REGISTRADOS PRIMARY KEY ( id_incidente_reportado ) ;
 
 CREATE TABLE PESSOA_DOMICILIO 
     ( 
@@ -138,6 +145,7 @@ CREATE TABLE PESSOA_DOMICILIO
      contato_primario          VARCHAR2 (15) , 
      telefone_celular          VARCHAR2 (15) 
     ) 
+    LOGGING 
 ;
 
 ALTER TABLE PESSOA_DOMICILIO 
@@ -150,8 +158,11 @@ CREATE TABLE SENSOR_PLUVIOMETRICO
      timestamp_medicao       TIMESTAMP WITH LOCAL TIME ZONE  NOT NULL , 
      precipitacao_mm         FLOAT , 
      status_bateria_sensor   NUMBER , 
-     coordenadas_sensor      NUMBER 
+     coordenadas_sensor      NUMBER , 
+     latitude_sensor         NUMBER , 
+     longiitude_sensor       NUMBER 
     ) 
+    LOGGING 
 ;
 
 ALTER TABLE SENSOR_PLUVIOMETRICO 
@@ -162,12 +173,13 @@ CREATE TABLE SENSOR_UMIDADE
      id_sensor_umidade                  INTEGER  NOT NULL , 
      id_area                            INTEGER , 
      timestamp_medicao                  TIMESTAMP WITH LOCAL TIME ZONE  NOT NULL , 
---  ERROR: Column name length exceeds maximum allowed length(30) 
      vwc_conteudo_volumetrico_agua_perc NUMBER , 
      status_bateria_sensor              NUMBER , 
      profundidade_sensor_cm             NUMBER , 
-     coordenadas_sensor                 NUMBER 
+     latitude_sensor                    NUMBER , 
+     longitude_sensor                   NUMBER 
     ) 
+    LOGGING 
 ;
 
 COMMENT ON COLUMN SENSOR_UMIDADE.profundidade_sensor_cm IS 'Profundidade de instalação do sensor em centimetros' 
@@ -184,8 +196,11 @@ CREATE TABLE SENSOR_VENTO
      velocidade_ms         FLOAT , 
      direcao_vento_graus   INTEGER , 
      status_bateria_sensor NUMBER , 
-     coordenadas_sensor    NUMBER 
+     coordenadas_sensor    NUMBER , 
+     latitude_sensor       NUMBER , 
+     longiitude_sensor     NUMBER 
     ) 
+    LOGGING 
 ;
 
 ALTER TABLE SENSOR_VENTO 
@@ -201,8 +216,11 @@ CREATE TABLE SENSOR_VIBRACAO
      aceleracao_eixo_z       NUMBER , 
      forca_vetorial_vibracao NUMBER , 
      status_bateria_sensor   NUMBER , 
-     coordenadas_sensor      NUMBER 
+     coordenadas_sensor      NUMBER , 
+     latitude_sensor         NUMBER , 
+     longiitude_sensor       NUMBER 
     ) 
+    LOGGING 
 ;
 
 COMMENT ON COLUMN SENSOR_VIBRACAO.aceleracao_eixo_x IS 'O sensor funciona com um acelerometro. ' 
@@ -211,7 +229,6 @@ COMMENT ON COLUMN SENSOR_VIBRACAO.aceleracao_eixo_x IS 'O sensor funciona com um
 ALTER TABLE SENSOR_VIBRACAO 
     ADD CONSTRAINT PK_SENSOR_VIBRACAO PRIMARY KEY ( id_sensor_vibracao ) ;
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE ALERTAS_DISPARADOS 
     ADD CONSTRAINT FK_ALERTAS_DISPARADOS_AREA_MONITORADA FOREIGN KEY 
     ( 
@@ -221,6 +238,7 @@ ALTER TABLE ALERTAS_DISPARADOS
     ( 
      id_area
     ) 
+    NOT DEFERRABLE 
 ;
 
 ALTER TABLE CLIMA_AREA 
@@ -232,9 +250,9 @@ ALTER TABLE CLIMA_AREA
     ( 
      id_area
     ) 
+    NOT DEFERRABLE 
 ;
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE DOMICILIOS_AREA 
     ADD CONSTRAINT FK_DOMICILIOS_AREA_AREA_MONITORADA FOREIGN KEY 
     ( 
@@ -244,25 +262,23 @@ ALTER TABLE DOMICILIOS_AREA
     ( 
      id_area
     ) 
+    NOT DEFERRABLE 
 ;
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE INCIDENTES_REGISTRADOS 
-    ADD CONSTRAINT FK_INCIDENTES_REGISTRADOS_PESSOA_DOMICILIO FOREIGN KEY 
+    ADD CONSTRAINT FK_INCIDENTES_REGISTRADOS_ALERTAS_DISPARADOS FOREIGN KEY 
     ( 
-     id_pessoa,
-     id_domicilio,
+     id_alerta,
+     id_area2
+    ) 
+    REFERENCES ALERTAS_DISPARADOS 
+    ( 
+     id_alerta,
      id_area
     ) 
-    REFERENCES PESSOA_DOMICILIO 
-    ( 
-     id_pessoa,
-     id_domicilio,
-     id_area
-    ) 
+    NOT DEFERRABLE 
 ;
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE PESSOA_DOMICILIO 
     ADD CONSTRAINT FK_PESSOA_DOMICILIO_DOMICILIOS_AREA FOREIGN KEY 
     ( 
@@ -274,9 +290,9 @@ ALTER TABLE PESSOA_DOMICILIO
      id_domicilio,
      id_area
     ) 
+    NOT DEFERRABLE 
 ;
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE SENSOR_PLUVIOMETRICO 
     ADD CONSTRAINT FK_SENSOR_PLUVIOMETRICO_AREA_MONITORADA FOREIGN KEY 
     ( 
@@ -286,9 +302,9 @@ ALTER TABLE SENSOR_PLUVIOMETRICO
     ( 
      id_area
     ) 
+    NOT DEFERRABLE 
 ;
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE SENSOR_UMIDADE 
     ADD CONSTRAINT FK_SENSOR_UMIDADE_AREA_MONITORADA FOREIGN KEY 
     ( 
@@ -298,9 +314,9 @@ ALTER TABLE SENSOR_UMIDADE
     ( 
      id_area
     ) 
+    NOT DEFERRABLE 
 ;
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE SENSOR_VENTO 
     ADD CONSTRAINT FK_SENSOR_VENTO_AREA_MONITORADA FOREIGN KEY 
     ( 
@@ -310,9 +326,9 @@ ALTER TABLE SENSOR_VENTO
     ( 
      id_area
     ) 
+    NOT DEFERRABLE 
 ;
 
---  ERROR: FK name length exceeds maximum allowed length(30) 
 ALTER TABLE SENSOR_VIBRACAO 
     ADD CONSTRAINT FK_SENSOR_VIBRACAO_AREA_MONITORADA FOREIGN KEY 
     ( 
@@ -322,6 +338,7 @@ ALTER TABLE SENSOR_VIBRACAO
     ( 
      id_area
     ) 
+    NOT DEFERRABLE 
 ;
 
 
@@ -366,5 +383,5 @@ ALTER TABLE SENSOR_VIBRACAO
 -- ORDS ENABLE SCHEMA                       0
 -- ORDS ENABLE OBJECT                       0
 -- 
--- ERRORS                                  12
+-- ERRORS                                   3
 -- WARNINGS                                 0

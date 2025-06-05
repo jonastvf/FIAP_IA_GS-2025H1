@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_SENSOR_PLUVIOMETRICO_AREA_MONITORADA" directorySegmentName="seg_0" id="E3104B30-4A3C-EC66-2F81-128E2886E019">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>3FABF60E-E6C9-8929-20A7-737AAF1E0C86</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<sourcePk>26170241-501C-E1CC-BC5B-80BFEDE6FCCA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>674A186B-507B-8B90-E153-265632ED6893</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>76A426AE-3181-275B-BA94-7C8FAC63F350</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

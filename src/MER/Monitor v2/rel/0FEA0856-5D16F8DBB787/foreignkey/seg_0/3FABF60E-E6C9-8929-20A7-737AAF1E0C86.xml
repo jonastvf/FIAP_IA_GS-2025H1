@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3FABF60E-E6C9-8929-20A7-737AAF1E0C86" containerWithKeyObject="A4C0F149-6C64-6A49-D20F-E3B43409F072" localFKIndex="BC37CFE0-3D7E-59FD-BAE0-46EC2B17F0B2" name="FK_SENSOR_PLUVIOMETRICO_AREA_MONITORADA">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>120C17D2-112F-A74B-1F9E-9E9FE0ACBBF2</importedID>
+<referredTableLongName>AREA_MONITORADA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7C3420F2-C1B7-B6F6-8676-8DE8418B1E04</referredTableID>
+<keyObject>6B6A1CC5-C884-46A6-A9E0-781CD41C303E</keyObject>
+<referredKeyID>6B6A1CC5-C884-46A6-A9E0-781CD41C303E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_area</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,156 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E7F1BDE1-1390-80AF-A7F8-16F171EA1B1D" name="INCIDENTES_REGISTRADOS">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>D1908905-14F3-2E4C-DEF5-AE3C98A02286</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_incidente_reportado" id="EA905478-94EF-B26B-4686-C29E7E03FAFA">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>58ABC361-23DF-DB80-A117-B135E8E09B8C</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_pessoa" id="0418B864-D118-B627-8EDC-8E7C440C3EBE">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>8F57EC63-E245-6BBA-79BD-06D077EE98B5</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="timestamp_incidente" id="FC309F03-3C65-26B3-2910-80F17A2BA552">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>12928CAE-EB92-382B-53AB-E6306E30724A</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<domain>B1670A39-1F50-9621-59E6-9BD94FAC48EC</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tipo_incidente_reportado" id="B3DBD40A-D2B9-663B-BC54-D64A8619AAE4">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>5BB28640-728B-5BD8-9D0F-9367AEEC98B8</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>73B3F0F6-5832-3A47-A632-945CE552C310</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="coordenadas_local_incidente" id="D49F21E8-7972-0B82-49AA-D9302932F9E8">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>9522066B-358E-5093-C874-ED3CD4F05296</importedID>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>5E2128D4-2CB3-8B2C-61AD-8EA72DD701F4</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_domicilio" id="4D8844F8-CDF1-8923-21B2-B06EE79A8807">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>043C94A0-4C58-FAAA-F841-98A0985A0009</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_area" id="8AA9F69C-2FAF-1635-C2E7-06F35D006D92">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>256FEB3E-B6F8-1847-2FB8-75434EB62CC3</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_alerta" id="C621D90D-1CF7-DD42-1781-5C440EA095B7">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:44:13 UTC</createdTime>
+<generatorID>D262B45F-A395-284D-AA77-5A553C5EE4D7</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A0C9B22-AE7E-CB0B-E819-E951E22E93A5" referredColumn="84562FA0-EDF0-126A-2276-B66C015F1EA9"/>
+</associations>
+</Column>
+<Column name="id_area2" id="F018957C-654C-AEA6-FA96-5B716075BB3D">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:44:13 UTC</createdTime>
+<generatorID>2D466848-7340-ACD8-1271-0BF7898B0165</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<use>0</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<domain>65D067E0-38E8-A8F9-CAE9-711C4CE60D5F</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8A0C9B22-AE7E-CB0B-E819-E951E22E93A5" referredColumn="04BC1CAC-6924-66D2-1D17-F996878D41FE"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C4488929-6D96-7ACD-0BAA-71DE3CEF16AF" name="PK_INCIDENTES_REGISTRADOS">
+<sourceDDLFile>Monitor deslizamentos.ddl</sourceDDLFile>
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<importedID>BC17A2E8-DD79-4F2B-C72C-1701B34A5FBC</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EA905478-94EF-B26B-4686-C29E7E03FAFA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7E782205-7E03-179E-46C2-3517253E4686" name="FK_INCIDENTES_REGISTRADOS_ALERTAS_DISPARADOS">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:44:13 UTC</createdTime>
+<generatorID>3AF2D55E-6FE9-8A9F-7085-1237A6C9CE76</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C621D90D-1CF7-DD42-1781-5C440EA095B7"/>
+<colUsage columnID="F018957C-654C-AEA6-FA96-5B716075BB3D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

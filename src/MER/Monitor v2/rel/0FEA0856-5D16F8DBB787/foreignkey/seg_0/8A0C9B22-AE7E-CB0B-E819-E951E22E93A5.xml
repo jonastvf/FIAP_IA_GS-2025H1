@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8A0C9B22-AE7E-CB0B-E819-E951E22E93A5" containerWithKeyObject="E7F1BDE1-1390-80AF-A7F8-16F171EA1B1D" localFKIndex="7E782205-7E03-179E-46C2-3517253E4686" name="FK_INCIDENTES_REGISTRADOS_ALERTAS_DISPARADOS">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:44:13 UTC</createdTime>
+<generatorID>3AF2D55E-6FE9-8A9F-7085-1237A6C9CE76</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<referredTableLongName>ALERTAS_DISPARADOS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>49B691D2-DEAC-3A20-4A89-FCDC88278F66</referredTableID>
+<keyObject>05EE434B-C10B-6701-C217-24EC5F75EC68</keyObject>
+<referredKeyID>05EE434B-C10B-6701-C217-24EC5F75EC68</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_alerta,id_area</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_SENSOR_VENTO_AREA_MONITORADA" directorySegmentName="seg_0" id="373922FD-54E0-C287-DCF7-D454246150B8">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:33:23 UTC</createdTime>
+<generatorID>368B3CC1-9E54-8F1C-7037-E1C2F966667F</generatorID>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<engineerTo>
+<item key="0FEA0856-6901-78C3-AA9A-5D16F8DBB787" value="true"/>
+</engineerTo>
+<sourcePk>26170241-501C-E1CC-BC5B-80BFEDE6FCCA</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>674A186B-507B-8B90-E153-265632ED6893</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FC3F02BD-D4FF-6F51-DF5A-19690014A0FF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

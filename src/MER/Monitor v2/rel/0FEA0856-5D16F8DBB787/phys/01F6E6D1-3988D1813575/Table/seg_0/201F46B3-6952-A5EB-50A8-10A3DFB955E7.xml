@@ -1,0 +1,63 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev20c class="oracle.dbtools.crest.model.design.storage.oracle.v20c.TableProxyOraclev20c" name="SENSOR_UMIDADE" directorySegmentName="seg_0" id="201F46B3-6952-A5EB-50A8-10A3DFB955E7">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="status_bateria_sensor" id="0417EE19-6426-7269-B685-C33FEB74C0D3">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="vwc_conteudo_volumetrico_agua_perc" id="0774F78E-1350-C722-B155-A635B8143064">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_area" id="2F9855E5-87F6-14A9-A58C-A6753F49EB98">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="profundidade_sensor_cm" id="8A3E5F13-0A98-0841-86AE-035E7958DBCC">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="coordenadas_sensor" id="A27C386C-10B0-B08E-5007-91D7C1297676">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_sensor_umidade" id="B752157E-F971-6144-CAC0-0ED63B8D9BD1">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="timestamp_medicao" id="C18814AE-F1DA-F288-D28D-857D7123E61E">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_SENSOR_UMIDADE_AREA_MONITORADA" id="7CEFE230-20BC-0724-E82D-B9185DFABEB0">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_SENSOR_UMIDADE" id="97ACF3D2-1425-6E41-D185-8C8894CE0EC7">
+<createdBy>Userv</createdBy>
+<createdTime>2025-06-05 20:32:59 UTC</createdTime>
+<ownerDesignName>Monitor v2</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev20c>
