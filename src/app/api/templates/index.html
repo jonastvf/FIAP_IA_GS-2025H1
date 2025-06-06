@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema de Monitoramento</title>
+</head>
+<body>
+    <style>
+        body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+.menu-lateral {
+  width: 200px;
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-lateral li {
+  margin: 15px 0;
+}
+
+.menu-lateral a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-lateral a:hover {
+  text-decoration: underline;
+}
+
+.conteudo {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+    </style>
+  <div class="container">
+    <nav class="menu-lateral">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#" onclick="mostrar('alertas')">Alertas</a></li>
+        <li><a href="#" onclick="mostrar('incidentes')">Incidentes</a></li>
+        <a href="/mapa-de-risco" target="_blank">Mapa</a>
+      </ul>
+    </nav>
+
+    <main class="conteudo">
+      <h1 id="titulo-pagina">Bem-vindo</h1>
+      <div id="conteudo-tabelas"></div>
+    </main>
+  </div>
+
+  <script>
+    let alertas = null;
+    let incidentes = null;
+    let carregandoAlertas = false;
+    let carregandoIncidentes = false;
+
+    async function mostrar(tipo) {
+    const container = document.getElementById("conteudo-tabelas");
+    const titulo = document.getElementById("titulo-pagina");
+
+    if (tipo === "alertas") {
+        if (carregandoAlertas) {
+        alert("Aguarde o carregamento dos alertas.");
+        return;
+        }
+
+        if (!alertas) {
+        carregandoAlertas = true;
+        const response = await fetch("http://localhost:5000/api/alertas" );
+        alertas = await response.json();
+        carregandoAlertas = false;
+        }
+
+        titulo.textContent = "Alertas Disparados";
+        container.innerHTML = gerarTabelaAlertas(alertas);
+    }
+
+    if (tipo === "incidentes") {
+        if (carregandoIncidentes) {
+        alert("Aguarde o carregamento dos incidentes.");
+        return;
+        }
+
+        if (!incidentes) {
+        carregandoIncidentes = true;
+        const response = await fetch("http://localhost:5000/api/incidentes");
+            if (!response.ok) throw new Error("Erro ao buscar incidentes");
+            incidentes = await response.json();
+        carregandoIncidentes = false;
+        }
+
+        titulo.textContent = "Incidentes Registrados";
+        container.innerHTML = gerarTabelaIncidentes(incidentes);
+    }
+    }
+
+    function gerarTabelaAlertas(dados) {
+        carregandoAlertas = false
+        return `
+            <table border="1" cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                <th>Data</th><th>Área</th><th>Pessoas Alertadas</th><th>Efetividade</th><th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                ${dados.map(a => `
+                <tr>
+                    <td>${a.data}</td>
+                    <td>${a.area_monitorada}</td>
+                    <td>${a.pessoas_alertadas}</td>
+                    <td>${a.efetividade}</td>
+                    <td>${a.acao_alerta}</td>
+                </tr>`).join('')}
+            </tbody>
+            </table>`;
+        }
+
+    function gerarTabelaIncidentes(dados) {
+    return `
+        <table border="1" cellspacing="0" cellpadding="5">
+        <thead>
+            <tr>
+            <th>Data</th><th>Reportado por</th><th>Tipo</th><th>Área</th><th>Latitude</th><th>Longitude</th>
+            </tr>
+        </thead>
+        <tbody>
+            ${dados.map(i => `
+            <tr>
+                <td>${i.data}</td>
+                <td>${i.reportado_por}</td>
+                <td>${i.tipo_incidente}</td>
+                <td>${i.area_monitorada}</td>
+                <td>${i.localizacao.lat}</td>
+                <td>${i.localizacao.lng}</td>
+            </tr>`).join('')}
+        </tbody>
+        </table>`;
+    }
+
+
+  </script>
+</body>
+</html>
