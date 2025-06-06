@@ -132,7 +132,7 @@ O ESP32 conecta com Google Sheets, enviando os dados recebidos pelo sensor. Para
 
 Para conectar com o Google Sheets utilizamos a função ***Apps Script***, e adicionando o código de implementação e inserção dos dados vindo pelo ESP32 a planilha, sendo comunicados através de um link http. O script está disponibilizado no caminho
 ```sheel
-FIAP_IA_GS-2025H1/documents/other/google-sheet
+FIAP_IA_GS-2025H1/documents/other/readme.md
 ```
 Ao simular, ele conecta-se com ao WiFI e logo em seguida, num *delay* de 3 segundos ele vai enviando e inserindo dados dos sensores a planilha do Google Sheets.
 <hr> 
