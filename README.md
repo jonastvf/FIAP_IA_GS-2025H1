@@ -55,9 +55,8 @@ O sistema será composto por:
 
 - Banco de dados: armazenará todas as informações relevantes das áreas de risco e também do app
 - Sensores IOT: implantados localmente, enviam informações via internet e rádio
-- Sistema de Alerta: compõe uma rede de alertas, com app, mensagens, avisos sonoros locais entre outros
+- Sistema de Alerta: compõe uma rede de alertas, com mensagens.
 - Algoritimos de IA: a partir dos dados são capazes de prever condições em que o sinistro pode ocorrer, poderá ser treinado a priori (por meio de estudos técninos e simulações) e a posteri (por dados de outros sinistros).
-- Ingestor de dados: recebe informações de outras fontes para melhorar as predições, exemplos: sistemas meterologicos, mapas e satélites. 
 
 **5. Arquitetura da solução**
 
