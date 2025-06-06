@@ -127,7 +127,9 @@ Devido a plataforma **Wokwi** ser limitadas em sesnores especifícos, utilizamos
 
 **3. ESP32 conectado com Google Sheets (Planilha do Google)**
 
-O ESP32 conecta com Google Sheets, enviando os dados recebidos pelo sensor. Para isso é utilizado o conceito de *IoT (Internet of Things)* ou Internet das Coisas. Para isso, utilizamos o módulo WiFi do ESP32 e bibliotecas que possibilita a conexão com a internet. No caso a `WiFi.h`, `HTTPClient` e `WiFiUdp.h`.
+Inicialmente, conectamos com Google Sheets utilizando a função Apps Script, e adicionando o código de implementação e inserção dos dados vindo pelo ESP32 a planilha, sendo comunicados através de um link http. O script está disponibilizado no github.  Contudo, já realizamos também a implementação dos métodos CRUD, gravando as informações diretamente no banco de dados modelado para aplicação. 
+
+Na conexão do ESP32 com Google Sheets, ele envia os dados captados pelo sensor. Para isso é utilizado o conceito de *IoT (Internet of Things)* ou Internet das Coisas. Para isso, utilizamos o módulo WiFi do ESP32 e bibliotecas que possibilita a conexão com a internet. No caso a `WiFi.h`, `HTTPClient` e `WiFiUdp.h`.
 
 Para conectar com o Google Sheets utilizamos a função ***Apps Script***, e adicionando o código de implementação e inserção dos dados vindo pelo ESP32 a planilha, sendo comunicados através de um link http. O script está disponibilizado no caminho
 ```sheel
